@@ -1,5 +1,5 @@
 # JavaPractice
-<!-- # Write a program to check if a number is even or odd.
+ # Write a program to check if a number is even or odd.
 # Find the sum of digits of a given number.
 # Reverse an integer number (e.g., 123 → 321).
 # Write a program to check if a number is a perfect square.
@@ -39,4 +39,4 @@
 # Write a program to segregate even and odd numbers in an array.
 # Check if two arrays are equal (contain the same elements in any order).
 # Find the k-th smallest/largest element in an array.
-# Find the second smallest element in an array. -->
+# Find the second smallest element in an array. 

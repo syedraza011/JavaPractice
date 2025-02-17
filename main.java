@@ -1,8 +1,21 @@
     public static void main(String[] args) {
   
-    isPrimeNumber(107); // Example call
-    sumOfDigits(150); // Example call
+    isPrimeNumber(107); 
+    sumOfDigits(150); 
+    ReverseNumber(150); 
+    perfectSquare(26);
 }
+  //  Write a program to check if a number is a perfect square.
+  public static void perfectSquare(int target) {
+    double sq =0;
+    sq=Math.sqrt(target);
+      if(sq==(int) sq){
+        System.out.println("Perfect sq");
+      }else {
+        System.out.println("not Perfect sq");
+      }
+    }
+  
   //Write a program to check if a number is even or odd.
 public static void isPrimeNumber(int target) {
   if(target%2==0){
@@ -22,7 +35,16 @@ public static void sumOfDigits(int target) {
     System.out.println("sum of the number is: "+sum);
   }
     //  Reverse an integer number (e.g., 123 → 321).
-    //  Write a program to check if a number is a perfect square.
+public static void ReverseNumber(int target){
+  String str=Integer.toString(target);
+  String changedNumber="";
+  for(int i=str.length()-1;i>=0;i--){
+changedNumber +=str.charAt(i);
+   
+  }
+  System.out.println("changed number = "+changedNumber);
+}
+  
     //  Find the sum of the first N natural numbers.
     //  Write a program to find the LCM (Least Common Multiple) of two numbers.
     //  Implement a program to print the multiplication table of a given number.
