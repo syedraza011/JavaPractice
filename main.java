@@ -4,7 +4,26 @@
     sumOfDigits(150); 
     ReverseNumber(150); 
     perfectSquare(26);
+    int arr[] = {1, 2, 4, 55, 108, 9}; 
+    minMaxInAnArray(arr);
 }
+ //  Find the maximum and minimum elements in an array.
+ public static void  minMaxInAnArray(int[] arr) {
+  int min=arr[0];
+  int max=0;
+  for(int i=0;i<arr.length;i++){
+    int curr= arr[i];
+    if(min>=curr){
+      min=curr;
+    }
+    if(max <=curr){
+      max=curr;
+    }
+  }
+  System.out.println("Minimum num of the array is: "+min+"\n"+"Max num of the array is:"+max);
+  
+ }
+
   //  Write a program to check if a number is a perfect square.
   public static void perfectSquare(int target) {
     double sq =0;
@@ -62,7 +81,7 @@ changedNumber +=str.charAt(i);
     //  Convert a character to uppercase/lowercase without using built-in functions.
     //  Write a program to check if a number is Harshad (Niven) number (sum of digits divides the number).
     //  More Array Problems
-    //  Find the maximum and minimum elements in an array.
+   
     //  Calculate the sum and average of elements in an array.
     //  Find the frequency of each element in an array.
     //  Find common elements between two arrays.
@@ -71,7 +90,7 @@ changedNumber +=str.charAt(i);
     //  Merge two sorted arrays into a single sorted array.
     //  Find the intersection of two arrays.
     //  Find the union of two arrays.
-    //  Find the first repeating element in an array.
+    
     //  Find the first non-repeating element in an array.
     //  Find pairs in an array that sum to a given number.
     //  Move all zeroes to the end of an array while maintaining order.
