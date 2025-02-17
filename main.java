@@ -1,4 +1,7 @@
-    public static void main(String[] args) {
+import java.util.HashMap;
+import java.util.HashSet;
+
+public static void main(String[] args) {
   
     isPrimeNumber(107); 
     sumOfDigits(150); 
@@ -6,6 +9,20 @@
     perfectSquare(26);
     int arr[] = {1, 2, 4, 55, 108, 9}; 
     minMaxInAnArray(arr);
+    String str="helefsdjklhhl";
+    findingRepeatingElement(str);
+}
+//  Find the first repeating element in an array.
+public static void findingRepeatingElement(String str){
+  HashSet<Character> map= new HashSet<>();
+  for(char ch: str.toCharArray()){
+    if(map.contains(ch)){
+      System.out.println("seen "+ch);
+      break;
+    } 
+    map.add(ch);
+
+  }
 }
  //  Find the maximum and minimum elements in an array.
  public static void  minMaxInAnArray(int[] arr) {
