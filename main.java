@@ -1,5 +1,7 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public static void main(String[] args) {
   
@@ -7,18 +9,38 @@ public static void main(String[] args) {
     sumOfDigits(150); 
     ReverseNumber(150); 
     perfectSquare(26);
-    int arr[] = {1, 2, 4, 55, 108, 9}; 
+    int arr[] = {1, 2, 8, 55, 108, 9}; 
     minMaxInAnArray(arr);
     String str="helefsdjklhhl";
     findingRepeatingElement(str);
     String targetStr="hheteleffsdjklhhl";
     findingNonRepeatingElement(targetStr);
+    findSumofTwoNumbers(arr, 10);
+
 }
+//remove all charcters and replace with space
+ //  Find pairs in an array that sum to a given number.
+ public static void findSumofTwoNumbers(int[]  arr, int target){
+  Set<List<Integer>> set= new HashSet<>();
+  for(int i=0;i<arr.length;i++){
+    int curr =arr[i];
+    for(int j=i+1;j<arr.length;j++){
+      int next=arr[j];
+      if(curr+next==target){
+        set.add(Arrays.asList(curr,next));
+      }
+    }
+  }
+  for(List<Integer> pair: set){
+    System.out.println("pair is:"+pair);
+  }
+ 
+ }
  //  Find the longest consecutive sequence in an array.
 
-  //  Find the duplicate elements in an array.
+//  Find the duplicate elements in an array.
 
-  
+
  //  Find the first non-repeating element in an array.
  public static void findingNonRepeatingElement(String targetStr){
 HashMap<Character, Integer> map= new HashMap<>();
@@ -131,8 +153,8 @@ changedNumber +=str.charAt(i);
     //  Find the intersection of two arrays.
     //  Find the union of two arrays.
     
-    //  Find the first non-repeating element in an array.
-    //  Find pairs in an array that sum to a given number.
+   
+   
     //  Move all zeroes to the end of an array while maintaining order.
    
     //  Implement a function to remove duplicates from an array.
