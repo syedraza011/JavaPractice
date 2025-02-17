@@ -16,9 +16,36 @@ public static void main(String[] args) {
     String targetStr="hheteleffsdjklhhl";
     findingNonRepeatingElement(targetStr);
     findSumofTwoNumbers(arr, 10);
+    fabinacciSeries(10);
 
 }
+//fabinacci series
+public static void  fabinacciSeries(int num){
+  int[] arr= new int[num];
+  if(num <=0){
+    return;
+  }
+  arr[0]=0;
+  if(num>1){
+    arr[1]=1;
+  }
+  
+  for(int i=2;i<num;i++){
+    
+     arr[i]=arr[i-1]+arr[i-2];
+     
+
+  }
+
+
+  for(int i=1;i<num;i++){
+   
+ 
+    System.out.println("array is:"+ arr[i]);
+  }
+}
 //remove all charcters and replace with space
+
  //  Find pairs in an array that sum to a given number.
  public static void findSumofTwoNumbers(int[]  arr, int target){
   Set<List<Integer>> set= new HashSet<>();
