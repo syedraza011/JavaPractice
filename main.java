@@ -11,13 +11,36 @@ public static void main(String[] args) {
     minMaxInAnArray(arr);
     String str="helefsdjklhhl";
     findingRepeatingElement(str);
+    String targetStr="hheteleffsdjklhhl";
+    findingNonRepeatingElement(targetStr);
 }
+ //  Find the longest consecutive sequence in an array.
+
+  //  Find the duplicate elements in an array.
+
+  
+ //  Find the first non-repeating element in an array.
+ public static void findingNonRepeatingElement(String targetStr){
+HashMap<Character, Integer> map= new HashMap<>();
+  for(char ch: targetStr.toCharArray()){
+    map.put(ch, map.getOrDefault(ch,0)+1);
+    
+  }
+  for(char ch: targetStr.toCharArray()){
+    if(map.get(ch)==1){
+      System.out.println("NON-Repeating number is: "+ch);
+      return;
+    }
+  }
+}
+
+
 //  Find the first repeating element in an array.
 public static void findingRepeatingElement(String str){
   HashSet<Character> map= new HashSet<>();
   for(char ch: str.toCharArray()){
     if(map.contains(ch)){
-      System.out.println("seen "+ch);
+      System.out.println("this is a first repeating character :"+ch);
       break;
     } 
     map.add(ch);
@@ -111,8 +134,7 @@ changedNumber +=str.charAt(i);
     //  Find the first non-repeating element in an array.
     //  Find pairs in an array that sum to a given number.
     //  Move all zeroes to the end of an array while maintaining order.
-    //  Find the longest consecutive sequence in an array.
-    //  Find the duplicate elements in an array.
+   
     //  Implement a function to remove duplicates from an array.
     //  Write a program to segregate even and odd numbers in an array.
     //  Check if two arrays are equal (contain the same elements in any order).
