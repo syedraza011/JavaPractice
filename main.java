@@ -1,10 +1,11 @@
     public static void main(String[] args) {
-      //System.out.println("Hello world");
-      int[] nums = {1, 2, 3, 4, 5}; // Array with predefined values
-
-      for(int i=0;i<nums.length;i++){
-        System.out.println("Array's"+" "+ i + " "+"element:"+ i);
-      }
+      
+     int target =108;
+     if(target%2==0){
+      System.out.println("Enetered Number is an EVEN number");
+     }else {
+      System.out.println("Enetered Number is an ODD number");
+     }
       
     }
 
